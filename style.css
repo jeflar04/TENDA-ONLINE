@@ -1,0 +1,82 @@
+/* Estilo general */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo del encabezado */
+  
+  .encabezado {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .encabezado h1 {
+    margin: 0;
+    font-size: 3em;
+  }
+  
+  .encabezado p {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  /* Estilo de la sección "Sobre nosotros" */
+  
+  .sobre-nosotros {
+    padding: 2em;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  
+  .sobre-nosotros h2 {
+    margin-top: 0;
+    font-size: 2em;
+  }
+  
+  #formulario {
+    margin: 20px auto;
+    padding: 20px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #formulario label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #formulario input,
+  #formulario textarea {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #formulario input[type="number"] {
+    width: 70px;
+  }
+  
+  #formulario button[type="submit"] {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #formulario button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  

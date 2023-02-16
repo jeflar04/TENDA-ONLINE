@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda online de zapatillas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="encabezado">
+    <h1>Tienda online de zapatillas</h1>
+    <p>¡Las mejores zapatillas del mercado!</p>
+  </section>
+  <section class="sobre-nosotros">
+    <h2>¿Qué somos/Qué hacemos?</h2>
+    <p>Somos una tienda en línea especializada en zapatillas de alta calidad. Ofrecemos una amplia selección de modelos, diseños y marcas, desde las clásicas hasta las últimas tendencias en zapatillas deportivas. Si buscas comodidad, estilo y calidad, estás en el lugar correcto.</p>
+  </section>
+  <!--
+  <section class="productos">
+    <h2>Productos destacados</h2>
+    <div class="producto">
+      <img src="https://via.placeholder.com/300x200" alt="Zapatillas Nike">
+      <h3>Zapatillas Nike</h3>
+      <p>$150.00</p>
+    </div>
+    <div class="producto">
+      <img src="https://via.placeholder.com/300x200" alt="Zapatillas Adidas">
+      <h3>Zapatillas Adidas</h3>
+      <p>$120.00</p>
+    </div>
+    <div class="producto">
+      <img src="https://via.placeholder.com/300x200" alt="Zapatillas Puma">
+      <h3>Zapatillas Puma</h3>
+      <p>$100.00</p>
+    </div>
+    <div class="producto">
+      <img src="https://via.placeholder.com/300x200" alt="Zapatillas Reebok">
+      <h3>Zapatillas Reebok</h3>
+      <p>$110.00</p>
+    </div>
+    <div class="producto">
+      <img src="https://via.placeholder.com/300x200" alt="Zapatillas Vans">
+      <h3>Zapatillas Vans</h3>
+      <p>$90.00</p>
+    </div>
+    <div class="producto">
+      <img src="https://via.placeholder.com/300x200" alt="Zapatillas Converse">
+      <h3>Zapatillas Converse</h3>
+      <p>$80.00</p>
+    </div>
+  </section>
+  -->
+  <section id="formulario">
+    <h2>Formulario de compra</h2>
+    <form action="connection.php" method="POST">
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+      <div>
+        <label for="apellido1">Primer Apellido:</label>
+        <input type="text" id="apellido1" name="apellido1" required>
+      </div>
+      <div>
+        <label for="apellido2">Segundo Apellido:</label>
+        <input type="text" id="apellido2" name="apellido2" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="cantidad">Cantidad:</label>
+        <div class="cantidad">
+          <input type="number" id="cantidad" name="cantidad" value="1" min="1" max="10">
+        </div>
+      </div>
+      <div>
+        <label for="producto">Código de producto:</label>
+        <input type="text" id="producto" name="producto" required>
+      </div>
+      <div>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+      </div>
+      <div>
+        <label for="direccion">Dirección:</label>
+        <textarea id="direccion" name="direccion" required></textarea>
+      </div>
+      <div>
+        <label for="comentario">Comentario adicional:</label>
+        <textarea id="comentario" name="comentario"></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+</body>
+</html>  
