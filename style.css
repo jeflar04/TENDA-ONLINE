@@ -7,23 +7,40 @@ body {
   }
   
   /* Estilo del encabezado */
-  
+  /*
   .encabezado {
     background-color: #333;
     color: #fff;
     padding: 1em;
     text-align: center;
   }
+  */
+  .encabezado {
+    background-image: url('prueba.jpg');
+    background-size: cover;
+    padding: 1em;
+    text-align: center;
+    width: 1278px;
+    height: 587px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   
   .encabezado h1 {
     margin: 0;
     font-size: 3em;
+    margin-bottom: 0.5em;
   }
   
   .encabezado p {
     margin: 0;
     font-size: 1.2em;
+    margin-top: 0.5em;
   }
+  
+  
   
   /* Estilo de la sección "Sobre nosotros" */
   
@@ -37,6 +54,8 @@ body {
     margin-top: 0;
     font-size: 2em;
   }
+
+  /* FORMULARIO */
   
   #formulario {
     margin: 20px auto;
@@ -78,5 +97,84 @@ body {
   
   #formulario button[type="submit"]:hover {
     background-color: #3e8e41;
+  }
+
+  /*productos */
+  
+  .productos {
+    text-align: center;
+  }
+  
+  .producto {
+    display: inline-block;
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    text-align: center;
+    vertical-align: top;
+  }
+  
+  .producto img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .producto h3 {
+    margin: 0;
+  }
+  
+  .producto p {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .productos {
+    margin-top: 50px;
+  }
+  
+  .producto {
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    vertical-align: top;
+    width: calc((100% / 3) - 40px); /* ajuste el ancho para 3 elementos por fila*/
+  }
+  
+  .producto img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .producto h3 {
+    margin: 0;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  
+  .producto p {
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /*FOOTER*/
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #fff;
+  }
+  
+  footer a:hover {
+    color: #ccc;
   }
   
