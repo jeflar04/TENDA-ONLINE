@@ -19,8 +19,24 @@ $direccion = $_POST['direccion'];
 $comentario = $_POST['comentario'];
 
 // Preparación de la consulta SQL
-$sql = "INSERT INTO tabla (nombre, apellido1, apellido2, email, cantidad, producto, telefono, direccion, comentario) 
+$sql = "INSERT INTO compras (nombre, apellido1, apellido2, email, cantidad, producto, telefono, direccion, comentario) 
 VALUES ('$nombre', '$apellido1', '$apellido2', '$email', $cantidad, '$producto', '$telefono', '$direccion', '$comentario')";
+
+//PRUEBA
+
+$producto = $_POST['producto'];
+
+// Crea la consulta SQL
+$sql = "SELECT * FROM compras WHERE producto = '$producto'";
+
+// Ejecuta la consulta y guarda el resultado en una variable llamada $result
+$result = mysqli_query($conn, $sql);
+
+// Verifica si la consulta devolvió algún resultado
+if (mysqli_num_rows($result) == 0) {
+  // Si no hay resultados, muestra un mensaje al usuario diciendo que el producto no está disponible
+  echo "Lo sentimos, este producto no está disponible en este momento.";
+}
 
 // Ejecución de la consulta SQL
 $resultado = mysqli_query($conexion, $sql);
